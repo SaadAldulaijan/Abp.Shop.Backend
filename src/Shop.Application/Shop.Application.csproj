@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Shop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shop.Domain\Shop.Domain.csproj" />
+    <ProjectReference Include="..\Shop.Application.Contracts\Shop.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Saas.Host.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Pro.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Public.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.LanguageManagement.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.TextTemplateManagement.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Gdpr.Application" Version="6.0.2" />
+  </ItemGroup>
+
+</Project>

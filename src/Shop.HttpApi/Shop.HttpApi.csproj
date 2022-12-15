@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Shop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shop.Application.Contracts\Shop.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.AuditLogging.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Admin.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Pro.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.LanguageManagement.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Saas.Host.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.TextTemplateManagement.HttpApi" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.Gdpr.HttpApi" Version="6.0.2" />
+  </ItemGroup>
+
+</Project>

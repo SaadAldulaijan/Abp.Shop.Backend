@@ -1,0 +1,25 @@
+{
+  "production": true,
+  "application": {
+    "baseUrl":"http://localhost:4200",
+    "name": "Shop",
+    "logoUrl": ""
+  },
+  "oAuthConfig": {
+    "issuer": "https://localhost:44334/",
+    "redirectUri": "http://localhost:4200",
+    "clientId": "Shop_App",
+    "responseType": "code",
+    "scope": "offline_access openid profile email phone Shop"
+  },
+  "apis": {
+    "default": {
+      "url": "https://localhost:44354",
+      "rootNamespace": "Shop"
+    },
+    "AbpAccountPublic": {
+      "url": "https://localhost:44334",
+      "rootNamespace": "AbpAccountPublic"
+    }
+  }
+}
